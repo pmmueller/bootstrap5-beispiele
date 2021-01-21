@@ -1,0 +1,135 @@
+<!doctype html>
+<!--
+  erstellt: 2021-01-21 
+
+  Bootstrap 5 > Examples > Grid > Gutters 
+  https://getbootstrap.com/docs/5.0/examples/grid/
+
+  Horizontale Gutter sind in diesem BS5-Beispiel nicht sichtbar. 
+
+  Bootstrap 5 > Docs > Layout > Gutters 
+  https://getbootstrap.com/docs/5.0/layout/gutters/#horizontal-gutters
+
+  Gutter sind sichtbar, weil die Inhalte in einem zusätzlichen DIV liegen, das die Hintergrundfarbe bekommt. 
+
+-->
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        .themed-grid-col {
+            padding: .75rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, 0.2);
+        }
+    </style>
+
+    <title>Bootstrap 5 > Layout > Gutters</title>
+  </head>
+  <body class="p-5">
+
+      <blockquote class="blockquote"><p>»With .gx-* classes, the horizontal gutters can be adjusted.«</p></blockquote>
+    <p>Beispiel aus der Bootstrap-Dokumentation funktioniert nicht.  </p>
+    
+    <div class="row row-cols-1 row-cols-md-3 gx-3">
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+    </div>
+
+    <p class="mt-3">Grund: </p>
+    <ol>
+        <li>Die Spalten haben background-color/border. Horizontale Gutter sind padding, übernehmen die Hintergrundfarbe und werden daher nicht sichtbar.</li>
+        <li>Das padding von .theme-grid-col überschreibt das padding der Gutter sowieso. </li>
+    </ol> 
+        
+    <p>Vertikale Gutters mit .gy-4 funktionieren, da sie anscheinend mit margin-top/bottom realisiert werden.</p>
+    
+    <hr class="my-5">
+    
+    <p>Dasselbe Beispiel <em>mit</em> zusätzlichem DIV für den Inhalt</p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+        <div class="col">
+            <div class="themed-grid-col">
+                <code>.col</code> with <code>.gx-4</code> gutters
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <p>Und hier das Beispiel ohne zusätzliches DIV, mit <code>gap</code> für die Zeile. </p>
+
+    <div class="row row-cols-1 row-cols-md-3 gx-3" style="gap: 1rem;">
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+        <div class="col themed-grid-col">
+            <code>.col</code> with <code>.gx-4</code> gutters
+        </div>
+    </div>
+
+    <p class="mt-3">So soll das sein. Die Bootstrap-Gutter sind nur ein Workaround ... Waiting for the gap. </p>
+
+
+  </body>
+</html>
