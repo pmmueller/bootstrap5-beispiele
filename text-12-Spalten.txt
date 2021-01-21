@@ -1,0 +1,9 @@
+==== 
+  12 Spalten 
+
+  Das Bootstrap-Raster hat pro Zeile zwölf gedachte Spalten: 
+    - 3 Elemente mit .col-sm (ohne Zahl) = jedes Element ist 4 gedachte Spalten breit (3x4=12)
+    - man kann die gewünschte Spaltenbreite explizit definieren 
+      - .col-sm-6 für eine Spalte macht diese doppelt so breit  
+      - Spalte hat width: 50%; bleiben jeweils 25% für die anderen beiden Spalten 
+    - wenn man Spaltenbreiten definiert, kann es max. 12 Spalten pro Zeile geben
