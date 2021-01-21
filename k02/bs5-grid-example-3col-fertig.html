@@ -14,7 +14,7 @@
   Grundprinzip: .container > .row > .col*
 
   - .container  
-    - zentriert, gibt padding li/re und begrenzt die Breite 
+    - auf der Seite zentriert, gibt padding li/re und begrenzt die Breite 
     - hat width: auf 100% 
     - begrenzt Breite mit max-width je nach Breakpoint (per Media Query)
     - fügt ein horizontales padding hinzu
@@ -67,6 +67,7 @@
     -->
     <div class="container bg-light">
       <div class="row">
+        <!-- ohne Spaltenanzahl = gleiche Breite -->
         <div class="col-sm py-3 border">
           One of three columns
         </div>
