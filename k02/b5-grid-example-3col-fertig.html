@@ -1,17 +1,24 @@
 <!doctype html>
 <!--
-  erstellt: 2021-01-21 
-  Bootstrap 5 > Grid > Example 
+  erstellt: 2021-01-22 
+  Bootstrap 5 > Layout > Grid system > Example 
   https://getbootstrap.com/docs/5.0/layout/grid/#example  
 
   - basiert auf dem Starter Template 
-  - mobile-first: in schmalem Viewport stehen alle Spalten untereinander 
-  - ab Breakpoint sm (≥576px) stehen drei gleich breite Spalten nebeneinander 
+  - Inhalt = Code vom Beispiel aus den Bootstrap-Docs
+  
+  - Zuerst body, div.container, div.row und div.col gestalten
+  - Dann mit DevTools zeigen
+    - mobile-first: in schmalem Viewport stehen alle Spalten untereinander 
+    - ab Breakpoint sm (≥576px) stehen drei gleich breite Spalten nebeneinander 
+    - mit Klasse .col bleiben die 3 Spalten in allen Viewports nebeneinander 
+    - mit Klasse .col-md responsiv erst ab Breakpoint md (≥768px)
+    - mit Klasse .col-sm-6 für eine Spalte wird diese doppelt so breit wie die anderen 
   
   Bootstrap > Grid > How it works  
   https://getbootstrap.com/docs/5.0/layout/grid/#how-it-works 
   
-  Grundprinzip: .container > .row > .col*
+  Grundprinzip: .container > .row > .col(-sm)
 
   - .container  
     - auf der Seite zentriert, gibt padding li/re und begrenzt die Breite 
@@ -27,9 +34,9 @@
     - sorgt am Anfang und Ende einer Zeile für bündige Ausrichtung im Raster:
       - jede Spalte hat von den .col-Klassen ein horizontales padding (gutter)
       - ein gleichgroßer negativer margin li/re für .row 
-      - ist ein Trick, da es "gap" früher nur für CSS-Grid gab, nicht für Flexbox
+      - dieser Trick ist nur nötig, weil "gap" für Flexbox noch nicht überall funktioniert
 
-  - .col-sm 
+  - .col bzw. col-sm 
     - muss ein Kind-Element von .row sein 
     - ist ein Flex-Item (flex: 1 0 0%) 
     - die Klasse .col-sm gilt ab dem Breakpoint sm (≥576px)  
@@ -39,7 +46,7 @@
   2. Überlegen, was passieren soll, wenn mehr Platz ist 
   
   ==== 
-  Das Bootstrap-Raster hat 12 Spalten 
+  Das Bootstrap-Raster basiert auf der Zahl 12  
 
   pro Zeile gibt es zwölf gedachte Spalten: 
     - 3 Elemente mit .col-sm (ohne Zahl) = jedes Element ist 4 gedachte Spalten breit (3x4=12)
@@ -57,7 +64,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Bootstrap 5 > Grid > Example</title>
+    <title>Bootstrap 5 > Layout > Grid > Example (fertig)</title>
   </head>
 
   <body class="p-3">
@@ -67,7 +74,6 @@
     -->
     <div class="container bg-light">
       <div class="row">
-        <!-- ohne Spaltenanzahl = gleiche Breite -->
         <div class="col-sm py-3 border">
           One of three columns
         </div>
