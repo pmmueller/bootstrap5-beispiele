@@ -1,0 +1,51 @@
+<!doctype html>
+<!--
+  erstellt: 2021-01-22 
+
+  Die Rolle der Container 
+
+  1. Ohne Container reicht der Inhalt von links bis rechts 
+
+  2. Standard: .container 
+    - sichtbar machen mit bg-light, border-top, border-bottom und mt-3 
+    - padding links und rechts 
+    - zentriert auf der Seite 
+    - maximale Breite abhängig vom Breakpoint (im DevTool zeigen)
+        - mobil = volle Breite
+        - ab sm dann stufenweise feste Breite
+
+  3. Responsiv: .container-md etc. 
+    - bleibt bis zum angegebenen Breakpoint volle Viewport-Breite 
+    - ab diesem Breakpoint dann stufenweise feste Breite 
+    - .container-sm verhält sich genauso wie .container 
+
+  4. Flexibel: .container-fluid 
+    - geht immer über die volle Breite des Viewports
+    - behält das horizontale padding 
+    - ideale für farbige Abschnitte auf einer Seite 
+
+-->
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <section class="container bg-light border-top border-bottom mt-3">
+
+      <h1>Hello, world!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi quis, repudiandae vitae itaque excepturi ipsum rem? Nemo commodi eveniet earum odit dolor ipsa veritatis consequuntur modi eaque, quam aut.</p>
+
+    </section>
+
+  
+
+  </body>
+</html>
