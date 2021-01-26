@@ -22,13 +22,11 @@
     - text-white bg-success (oder so) bg-gradient 
     - p-3 rounded mb-2 
     - shadow
-
 optional: Reihenfolge ändern mit order 
   - Start: mobil Text > Bild, md Text | Bild 
   - Ziel: ab md Bild | Text 
   - Lösung: Bildspalte order-md-1, Textspalte order-md-2 
   - Alternative: Textspalte nichts, Bildspalte order-md-first
-
 -->
 <html lang="de">
   <head>
@@ -46,7 +44,7 @@ optional: Reihenfolge ändern mit order
     <div class="container">
         <section class="row my-5 align-items-center">
             
-            <div class="col-md-5 order-md-1">
+            <div class="col-md-5">
                 
                 <!-- Bootstrap Icon https://icons.getbootstrap.com/icons/cloud/ -->
                 <div class="d-inline-block text-white bg-success bg-gradient p-3 rounded mb-2 shadow">
@@ -62,7 +60,7 @@ optional: Reihenfolge ändern mit order
 
             </div>    
             
-            <div class="col-md-7 order-md-2">
+            <div class="col-md-7">
                 <img src="../img/wolken-0700.jpg"
                      srcset="../img/wolken-0700.jpg 1x, ../img/wolken-1400.jpg 2x"
                      class="img-fluid mx-auto my-3 shadow" 
