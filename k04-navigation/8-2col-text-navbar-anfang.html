@@ -2,13 +2,15 @@
 <!--
   erstellt: 2021-01-27
   
-  Bootstrap 5
-  - mit 2col-Grid aus k02
-  - mit h2.fw-light.display-5 und p.lead   
-  - mit img.img-fluid.shadow 
-  - mit a.btn etc. 
-  - mit div.inline-block.etc und Icon 32/32 darin 
-  - mit responsiver Navbar (und JS-Link vor </body>)
+  Bootstrap 5 - 2col
+
+  Übung
+  responsive Navbar einbauen
+
+  Das Markup für die Navbar sollte ungefähr so aussehen: 
+  https://getbootstrap.com/docs/5.0/components/navbar/#nav 
+
+  Nicht vergessen: die responsive Navigation benötigt JavaScript ;-) 
 
 -->
 <html lang="de">
@@ -24,39 +26,8 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <!-- innerer Container (nach Wahl -fluid oder -sonstwas) -->
-        <div class="container">
 
-            <!-- Branding (Titel oder Logo etc.) -->
-            <a class="navbar-brand" href="#">Clouds</a>
-            
-            <!-- Collapse benötigt Bootstrap-JS -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Wrapper für die eigentliche Navigation -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Die eigentliche Navigation -->
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 4</a>
-                    </li>                    
-                </ul>
-            </div>
-
-        </div>
-    </nav>    
+    <!-- Hier die responsive Navbar einfügen -->
 
     <div class="container">
         <section class="row my-5 align-items-center">
@@ -96,8 +67,5 @@
         </section>
     </div>
   
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
   </body>
 </html>
