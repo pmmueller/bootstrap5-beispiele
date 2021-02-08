@@ -1,6 +1,7 @@
 <!doctype html>
 <!--
   erstellt: 2021-01-26
+  geändert: 2021-02-08 
   
   Bootstrap 5
   Übung 2col Grid mit Text 
@@ -12,10 +13,11 @@
     .row 
     2x .col 
   - bestehende Inhalte in die Spalten verschieben 
-  - Testen, und Spalten auf col-md-6 ändern 
   - Bildspalte mit .bg-light
+  - Spalten auf .col-sm und dann auf .col-md ändern 
+  - .col-md-4 und .col-md-8 = Spalten unterschiedlich breit 
   
-
+  ----
   optional: Reihenfolge ändern mit order 
   - Start: mobil Text > Bild, md Text | Bild 
   - Ziel: ab md Bild | Text 
@@ -40,7 +42,7 @@
         
         <section class="row my-5">
             
-            <div class="col-md-6">
+            <div class="col-md">
                 
                 <h2>Unsere Clouds</h2>
             
@@ -54,7 +56,7 @@
 
             </div>    
             
-            <div class="col-md-6 bg-light">
+            <div class="col-md bg-light">
                 <p>Hier kommt ein Bild hin ...</p>
             </div>
             
