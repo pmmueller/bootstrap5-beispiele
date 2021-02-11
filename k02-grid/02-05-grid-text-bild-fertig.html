@@ -1,29 +1,22 @@
 <!doctype html>
 <!--
   erstellt: 2021-01-26
-  geändert: 2021-02-08 
+  geändert: 2021-02-11 
   
   Bootstrap 5
-  Übung 2col Grid mit Text 
+  Übung Zweispaltiges Grid mit Text und Bildplatzhalter
   Wird in K03 um Bild, Icon und Button erweitert
 
   Schritte: 
-  - 2col Grid erstellen mit div.container>section.row>div.col*2 
-    .container 
-    .row 
-    2x .col 
+  - Emmet: div.container>div.row>div.col*2 
+    1x div.container 
+    1x div.row 
+    2x div.col 
   - bestehende Inhalte in die Spalten verschieben 
   - Bildspalte mit .bg-light
   - Spalten auf .col-sm und dann auf .col-md ändern 
   - .col-md-4 und .col-md-8 = Spalten unterschiedlich breit 
   
-  ----
-  optional: Reihenfolge ändern mit order 
-  - Start: mobil Text > Bild, md Text | Bild 
-  - Ziel: ab md Bild | Text 
-  - Lösung: Bildspalte order-md-1, Textspalte order-md-2 
-  - Alternative: Textspalte nichts, Bildspalte order-md-first
-
 -->
 <html lang="de">
   <head>
@@ -34,24 +27,24 @@
     <!-- Bootstrap CSS (v5.0.0-beta2) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Bootstrap 5 > Grid > 2col</title>
+    <title>Bootstrap 5 > Grid > Zwei Spalten mit Text und Bild</title>
   </head>
   <body>
 
-    <div class="container mt-3">
+    <div class="container mt-5">
         
-        <section class="row my-5">
+        <div class="row">
             
             <div class="col-md">
                 
                 <h2>Unsere Clouds</h2>
             
                 <p>Der einleitende Absatz über Clouds und weiße Wolken am blauen Himmel, der die Aufmerksamkeit des Lesers einfängt.</p>
-                <p>Die Buttons kann man anklicken. Beatae aliquam odio cumque, ullam ipsum aperiam doloremque laudantium pariatur dolorem animi, aliquid maxime.</p>
+                <p>Beatae aliquam odio cumque, ullam ipsum aperiam doloremque laudantium pariatur dolorem animi, aliquid maxime.</p>
             
                 <p>
                   <a href="#">Jetzt buchen</a> 
-                  <a href="#">Mehr über unsere Clouds</a>
+                  <a href="#">Mehr erfahren</a>
                 </p>
 
             </div>    
