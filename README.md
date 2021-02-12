@@ -1,6 +1,7 @@
 # Bootstrap 5 - ein erster Blick 
 Projektdateien für den Videokurs bei LinkedIn Learning
-Stand: 2021-02-12 
+
+Stand: v1.0 (2021-02-12) 
 
 ## Beschreibung
 Bootstrap ist das wohl bekannteste Frontend-Framework der Welt, und mit der Version 5 bleibt es auch nach 10 Jahren immer noch auf der Höhe der Zeit. 
