@@ -1,23 +1,4 @@
 <!doctype html>
-<!--
-  erstellt: 2021-01-27  
-  Bootstrap 5
-  Docs > Components > Navbar
-  https://getbootstrap.com/docs/5.0/components/navbar/
-
-  Übung 
-  Responsive Navbar einfügen 
-
-  Das Markup für die Navbar sollte ungefähr so aussehen: 
-  https://getbootstrap.com/docs/5.0/components/navbar/#nav 
-
-  - Logo als Branding 
-  - Normale Navigation 
-  - ab sm horizontal, darunter als Button 
-
-  Do not forget: die responsive Navigation benötigt JavaScript ;-) 
-
--->
 <html lang="de">
   <head>
     <!-- Required meta tags -->
@@ -27,15 +8,88 @@
     <!-- Bootstrap CSS (v5.0.0-beta2) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Bootstrap 5 > Navbar</title>
+    <title>Bootstrap 5 > Components > Navbar</title>
   </head>
   <body>
 
-    <!-- leere Seite - hier kommt die für die Navbar hin -->
-    <p>Platz für die Navbar ... </p>
+    <!-- Navbar-Beispiel aus den Docs und etwas angepasst  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- innerer Container (nach Wahl -fluid oder -sonstwas) -->
+        <div class="container-fluid">
 
-    <!-- JS: Bootstrap Bundle with Popper (v5.0.0-beta2) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+            <!-- Branding (Titel oder Logo etc.) -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            
+            <!-- Collapse benötigt Bootstrap-JS -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Wrapper für die eigentliche Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Die eigentliche Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 4</a>
+                    </li>                    
+                </ul>
+            </div>
 
+        </div>
+    </nav>        
+
+    <div class="container mt-5">
+        <div class="row align-items-md-center">
+            
+            <div class="col-md">
+
+                <div class="d-inline-block 
+                            bg-success text-white bg-gradient 
+                            p-3 
+                            rounded shadow
+                            mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                        <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                    </svg>
+                </div>
+                
+                <h2 class="display-5">Unsere Clouds</h2>
+                <p class="lead">Der einleitende Absatz über Clouds und weiße Wolken am blauen Himmel, der die Aufmerksamkeit des Lesers einfängt.</p>
+                <p>Beatae aliquam odio cumque, ullam ipsum aperiam doloremque laudantium pariatur dolorem animi, aliquid maxime.</p>
+
+                <p>
+                    <a href="#" class="btn btn-primary btn-lg me-2 mb-2">Jetzt buchen</a> 
+                    <a href="#" class="btn btn-outline-primary btn-sm">Mehr erfahren</a>
+                </p>
+
+
+            </div>    
+            
+            <div class="col-md">
+
+                <img src="../img/wolken-0700.jpg"
+                    srcset="../img/wolken-0700.jpg 1x, ../img/wolken-1400.jpg 2x"
+                    class="img-fluid rounded shadow"
+                    loading="lazy"
+                    alt="Weiße Wolken am blauen Himmel" 
+                    width="700"
+                    height="500">
+            
+            </div>
+
+        </div>
+    </div>
+  
+    <!-- JavaScript von Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
   </body>
 </html>
