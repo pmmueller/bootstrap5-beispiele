@@ -55,7 +55,7 @@ Sie sehen darin, wie Sie mit Bootstrap ganz einfach responsive Grid-Layouts und 
 
 04 Eine Navbar für die Übungsseite
 
-### Zusammenfassung und Ausblick 
+### K05 Zusammenfassung und Ausblick 
 01 So geht's weiter mit Bootstrap (Sass, npm etc.)
 
 --- eof --- 
