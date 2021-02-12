@@ -24,13 +24,13 @@ Sie sehen darin, wie Sie mit Bootstrap ganz einfach responsive Grid-Layouts und 
 05 Nachschlagen: die Dokumentation von Bootstrap 5 ist wirklich gut
 
 ### K02 Layout - das Grid-System 
-01 Grid: Raster-Layouts mit Bootstrap 5 bestehen aus einem Container mit Zeilen und Spalten
+01 Grid: Raster-Layouts mit Bootstrap - ein Container mit Zeilen und Spalten
 
 02 Container: Layouts begrenzen, zentrieren und horizontal padden
 
 03 Grid-System: mobile-first, responsive, Flexbox und 12 Spalten
 
-04 Beispiel: ein responsives, dreispaltiges Layout mit dem Grid-System von Bootstrap 5 erstellen
+04 Beispiel: ein responsives, dreispaltiges Layout mit dem Grid-System von Bootstrap 
 
 05 Übung: Zweispaltiges Grid mit Text und Platzhalter für ein Bild
 
